@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="快速缝合预设工具是一款 Windows 本地工具，用来对照、编辑和合并 SillyTavern 预设。">
+  <title>快速缝合预设工具 · 下载与使用说明</title>
+  <link rel="canonical" href="https://bitasys.github.io/preset-stitcher/">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./">快速缝合预设工具</a>
+    <nav aria-label="页面导航">
+      <a href="#install">安装步骤</a>
+      <a href="#guide">使用方法</a>
+      <a href="https://github.com/bitasys/preset-stitcher">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <p class="platform">SillyTavern · Windows 本地工具</p>
+        <h1 id="title">快速缝合<br class="desktop-break">预设工具</h1>
+        <p class="intro">大佬更新预设后，可以逐条挑选新版、自己改过的老版，或 AI 改好的正文，合成一份新的酒馆预设。</p>
+        <div class="actions">
+          <a class="primary" href="https://github.com/bitasys/preset-stitcher/archive/refs/heads/main.zip">下载 Windows 工具（ZIP）</a>
+          <a href="#install">第一次用？看安装步骤</a>
+        </div>
+        <p class="requirements">需要 Windows 和 Python 3.10 或更新版本。</p>
+      </div>
+      <figure class="example">
+        <figcaption>保存完整预设时，你可以这样选</figcaption>
+        <table>
+          <thead><tr><th scope="col">条目示例</th><th scope="col">最终采用</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">叙事风格</th><td>我改过的老版</td></tr>
+            <tr><th scope="row">对话细节</th><td>AI 改好的正文</td></tr>
+            <tr><th scope="row">世界设定</th><td>大佬发的新版</td></tr>
+          </tbody>
+        </table>
+        <p>正文采用哪一版、发送时是否启用，可以分别设置。</p>
+      </figure>
+    </section>
+
+    <section id="install" class="section">
+      <h2>第一次安装</h2>
+      <ol class="steps">
+        <li><h3>下载并解压</h3><p>点页面上方的下载按钮。在 Windows 的「下载」文件夹里右键点击 ZIP，选「全部解压缩」，再点「提取」。</p></li>
+        <li><h3>安装 Python</h3><p>如果电脑还没有 Python 3.10 或更新版本，到 <a href="https://www.python.org/downloads/windows/">Python 的 Windows 下载页</a>下载安装。大部分电脑选 64-bit。安装界面若有「Add Python to PATH」，可以勾上。</p></li>
+        <li><h3>打开工具</h3><p>在解压出来的文件夹里双击 <code>启动.cmd</code>。如果 Windows 隐藏文件后缀，文件名可能只显示「启动」。</p></li>
+      </ol>
+    </section>
+
+    <section id="guide" class="section">
+      <h2>怎么用</h2>
+      <ol class="steps">
+        <li><h3>打开预设</h3><p>「新版本预设」选从大佬那里下载的 JSON，「自己改的老版本预设」选你自己在用的那份。只有新版时，勾选「只处理新版本」。</p></li>
+        <li><h3>挑要分享的正文</h3><p>看过正文后点「标记 SFW」，再选导出哪一版。可以多选后点「批量导出所选 SFW」，一起保存成一个 JSON。把想删下来的私密内容留在工具里的便笺。</p></li>
+        <li><h3>发给 AI，再放回来</h3><p>把导出的 JSON 和工具提示你复制的那段话发给 AI。收到结果后，点「放回 AI 改好的 JSON」。</p></li>
+        <li><h3>检查并另存</h3><p>点「另存完整预设」，逐条选最终正文和开关。保存为一份新的 JSON，再到 SillyTavern 导入。</p></li>
+      </ol>
+      <div class="local">
+        <h3>私密内容留在哪里？</h3>
+        <p>这张网页只是下载和使用说明。程序在你的电脑上运行，便笺、完整预设和备份留在本机。要交给外部 AI 的是你核对过的交换 JSON。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <a href="https://github.com/bitasys/preset-stitcher#readme">完整说明和常见问题</a>
+    <a href="https://github.com/bitasys/preset-stitcher/issues">反馈问题</a>
+  </footer>
+</body>
+</html>
